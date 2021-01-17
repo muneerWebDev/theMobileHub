@@ -1,0 +1,36 @@
+.booking-page{
+    padding-bottom: 11rem;
+    .banner-title{
+        margin: 13rem 0 10.5rem;
+    }
+
+    .icalendar{
+        margin-bottom: 6.5rem;
+    }
+
+    .timeAndContinue{
+        text-align: left;
+        max-width: 75rem;
+        margin: auto;
+        label{
+            margin-bottom: 15px;
+        }
+        .form-control{
+            background: $light_blue_bg;
+            font-size: 2rem;
+            border: none;
+            margin-right: 15px;
+            height: 5.2rem;
+            border-radius: 6px;
+            font-weight: 800;
+            color: $dark_blue;
+            line-height: 5.2rem;
+        }
+
+        .wrap{
+            display: flex;
+            align-items: center;
+        }
+
+    }
+}

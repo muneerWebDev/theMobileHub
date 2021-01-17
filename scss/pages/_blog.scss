@@ -1,0 +1,118 @@
+.blog-listing-page {
+    padding: 15rem 0 11.5rem;
+
+    .banner-title {
+        margin-bottom: 6rem;
+        text-align: center;
+    }
+}
+
+#blogsTab {
+    justify-content: center;
+    margin-bottom: 5.5rem;
+    border: none;
+
+    .nav-link {
+        padding: 1.2rem 1.5rem;
+        border-radius: 5px;
+        text-align: center;
+        width: 12rem;
+        font-size: 1.2rem;
+        border: 2px solid #fff;
+        margin: 0 10px 10px;
+
+        @include media-breakpoint-down(xs) {
+            background: lighten($light_blue_bg, 4.5);
+            box-shadow: $btn-box-shadow-light-hover;
+        }
+
+        &.active {
+            background: #fff;
+        }
+    }
+
+    .nav-item {
+
+        &:first-child .nav-link {
+            color: $blog_tag_color_1;
+        }
+
+        &:nth-child(2) .nav-link {
+            color: $blog_tag_color_2;
+        }
+
+        &:nth-child(3) .nav-link {
+            color: $blog_tag_color_3;
+        }
+
+        &:nth-child(4) .nav-link {
+            color: $blog_tag_color_4;
+        }
+    }
+}
+
+#blogsTabContent .tab-pane {
+
+    &:first-child .card .blog-meta .tag {
+        color: $blog_tag_color_1;
+        background: $blog_tag_bg_1;
+    }
+
+    &:nth-child(2) .card .blog-meta .tag {
+        color: $blog_tag_color_2;
+        background: $blog_tag_bg_2;
+    }
+
+    &:nth-child(3) .card .blog-meta .tag {
+        color: $blog_tag_color_3;
+        background: $blog_tag_bg_3;
+    }
+
+    &:nth-child(4) .card .blog-meta .tag {
+        color: $blog_tag_color_4;
+        background: $blog_tag_bg_4;
+    }
+
+}
+
+.blog-detail-page {
+    padding: 12.5rem 0 6.5rem;
+
+    .main-image {
+        border-radius: 34px;
+        margin-bottom: 2.5rem;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .blog-title {
+        margin-bottom: 3.8rem;
+    }
+
+
+
+    .main-content {
+        .blog-meta {
+            font-size: 1.2rem;
+        }
+
+        p {
+            opacity: .75;
+            margin-bottom: 3rem;
+        }
+    }
+
+    @include media-breakpoint-up(xl){
+        .blog-detail-wrapper {
+            padding: 0 3rem;
+    
+    
+            .main-content {
+                // padding: 0 5.8rem;
+            }
+        }
+    }
+}

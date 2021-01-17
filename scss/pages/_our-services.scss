@@ -1,0 +1,49 @@
+.our-services-page,
+.service-single-page{
+    padding-bottom: 18rem;
+    .banner-title,
+    .service-main-title{
+        text-align: center;
+        padding-top: 12.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .group{
+        margin-top: 7rem;
+
+        .group-title{
+            margin-bottom: 3.5rem;
+        }
+        .card{
+            margin-bottom: 30px;
+            height: calc(100% - 30px);
+        }
+    }
+
+    .service-main-title{
+        margin-bottom: 10rem;
+    }
+    .service-desc{
+        img{
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: $btn-box-shadow-hover;
+        }
+        p{
+            margin-bottom: 3.5rem;
+            opacity: .75;
+        }
+    }
+
+    .book-now{
+        margin-top: 6rem;
+        padding: 4rem;
+        border-radius: 15px;
+        background: lighten($light_blue_bg_2, 4.6);
+
+        .btn-primary{
+            max-width: 27.8rem;
+            width: 100%;
+        }
+    }
+}

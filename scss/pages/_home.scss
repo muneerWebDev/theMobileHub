@@ -1,0 +1,164 @@
+.homePage {
+
+    .mainBanner {
+        .text-group {
+            padding: 5rem 0 8.5rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+            .banner-img {
+                max-height: 35rem;
+            }
+
+            .text-group {
+                padding-top: 0;
+            }
+        }
+    }
+
+    .services {
+        .card {
+            margin-bottom: 3rem;
+            height: calc(100% - 3rem);
+            padding: 3rem 2.5rem 3rem 4.2rem;
+            transition: .3s;
+            box-shadow: none;
+
+            &:hover {
+                box-shadow: $btn-box-shadow;
+            }
+
+            .icon {
+                width: 4.5rem;
+                height: 4.5rem;
+                text-align: center;
+                line-height: 4.5rem;
+                margin-bottom: 3rem;
+            }
+
+            &.repair {
+                background: $repair_bg;
+            }
+
+            &.service {
+                background: $service_bg;
+            }
+
+            &.guarantee {
+                background: $guarantee_bg;
+            }
+        }
+    }
+
+    .choose-service {
+        background: $dark_gradient_bg;
+        padding: 8rem 0 0;
+    }
+
+    .who_we_are {
+        padding: 8.5rem 0 11.5rem;
+    }
+
+    .our-services {
+        padding: 15rem 0;
+        width: 100vw;
+        overflow: hidden;
+
+        @include media-breakpoint-down(sm){
+            padding: 11.5rem 0 6rem;
+
+            .service-type{
+                padding-bottom: 7.5rem;
+            }
+        }
+        .text-group {
+            padding-bottom: 2rem;
+        }
+
+        .slick-next {
+            @include arrow-right;
+            border-color: #D4D2E3;
+            margin-top: -26px;
+            margin-right: -7.6rem;
+
+            @include media-breakpoint-down(md){
+                margin-right: -5rem;
+            }
+
+            @include media-breakpoint-down(sm){
+                margin-right: -2.5rem;
+            }
+
+            @include media-breakpoint-down(xs){
+                margin-right: 4rem;
+                height: 15px;
+                width: 15px;
+            }
+            &::before {
+                display: none;
+            }
+        }
+
+        .all-services-slider {
+            position: relative;
+        }
+
+        .all-services-slider+.all-services-slider {
+            margin-top: -36px;
+        }
+
+        .slick-list {
+            padding: 0 0 36px 30px;
+            margin: 0 -30px 0 -30px;
+            display: flex;
+
+            @media (max-width:575px){
+                padding-right: 5rem;
+            }
+        }
+
+        .slick-slide{
+            opacity: 0;
+            transition: .3s;
+            &.slick-active{
+                opacity: 1;
+            }
+        }
+
+        .slick-track {
+            margin: 0 -15px;
+            display: flex;
+        }
+
+        .item {
+            padding: 15px;
+        }
+
+    }
+
+    .contact {
+        margin: 22.5rem 0 0;
+
+        .icon-image {
+            margin: -3rem 0 -15rem;
+
+            @include media-breakpoint-down(md) {
+                margin-top: 3rem;
+            }
+        }
+
+        .contact-image {
+            margin-top: -5rem;
+
+            @include media-breakpoint-down(sm) {
+                margin-top: -17rem;
+            }
+        }
+    }
+
+
+    .blogs {
+        padding: 15rem 0 9rem;
+        background: $light_gradient_bg;
+    }
+}

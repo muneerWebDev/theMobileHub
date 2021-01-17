@@ -1,0 +1,77 @@
+.service-type {
+    padding-bottom: 13rem;
+
+    .mainBanner {
+        padding: 10rem 0;
+    }
+
+    .desc p {
+        max-width: 74.5rem;
+        padding: 9.5rem 0 0;
+        margin: 0 auto;
+    }
+
+    h2 {
+        margin-bottom: 4rem;
+    }
+
+    .group {
+        padding-bottom: 10rem;
+    }
+
+    .select-brand {
+        .card .image {
+            height: 13rem;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+
+.select-repairs {
+    padding: 7rem 0 12rem;
+    .showcase .wrapper {
+        background: #fff;
+        padding: 2.5rem 2.5rem 7rem 2.5rem;
+        border-radius: 15px;
+        box-shadow: $card-box-shadow;
+
+
+        .device-info {
+            .image {
+                padding: 10.8% 22% 0 13%;
+                background: url("../../images/phone-bg.png") center center no-repeat;
+                background-size: contain;
+                margin-bottom: 5rem;
+                display: inline-block;
+
+                img {
+                    box-shadow: $card-box-shadow;
+                }
+            }
+
+            .text {
+
+                @include media-breakpoint-up(lg) {
+                    padding-left: 5.5rem;
+
+                }
+            }
+        }
+
+    }
+
+    #choose-services{
+        padding: 10rem 0 0;
+
+        h2{
+            padding-bottom: 6.5rem;
+        }
+    }
+
+    .fullwidthTab{
+        padding-top: 4rem;
+    }
+    
+}

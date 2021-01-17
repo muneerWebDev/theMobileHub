@@ -1,0 +1,34 @@
+// mixins 
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin arrow-right{
+    border: solid $blue_black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+@mixin checkbox {
+    width: 3.4rem;
+    height: 3.4rem;
+    color: $grey;
+    border: 3px solid $grey;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 7px;
+    transition: .3s;
+    opacity: .62;
+}
+
+@mixin checkbox-selected {
+    @include checkbox();
+    color: #fff;
+    border-color: $green;
+    background: $green;
+}

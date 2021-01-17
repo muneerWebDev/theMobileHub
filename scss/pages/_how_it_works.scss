@@ -1,0 +1,40 @@
+.how_it_works-page{
+    padding-bottom: 15rem;
+    .heading-sec{
+        padding: 12rem 0 10rem;
+    }
+
+    .intro{
+
+        .steps-card > .row{
+            margin-left: -10px;
+            margin-right: -10px;
+            &>div{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        .card{
+            background: #fff;
+            padding: 3rem 3.8rem;
+            text-align: center;
+            margin-bottom: 20px;
+            height: calc(100% - 20px);
+            box-shadow: $card-box-shadow;
+            p{
+                opacity: .9;
+                font-size: 1.4rem;
+                margin: 1.5rem 0 0;
+            }
+        }
+
+        .btn-secondary{
+            margin: 4.5rem 0 3.5rem;
+        }
+    }
+
+    h1{
+        margin: 10rem 0 4rem;
+    }
+}
