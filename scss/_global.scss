@@ -535,6 +535,9 @@ footer {
 
             a {
                 margin-bottom: 1rem;
+                &.share-btn{
+                    margin-right: 2rem;
+                }
             }
 
             p,
@@ -562,7 +565,7 @@ footer {
         }
 
         a {
-            margin-left: auto;
+            margin-left: 1rem;
             line-height: auto;
         }
 

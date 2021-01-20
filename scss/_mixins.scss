@@ -11,7 +11,11 @@
     display: inline-block;
     padding: 4px;
     transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+}
+
+@mixin arrow-left{
+    @include arrow-right();
+    transform: rotate(135deg);
 }
 
 @mixin checkbox {

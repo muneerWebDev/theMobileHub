@@ -36,6 +36,10 @@ $(document).ready(function () {
 
 
   // sliders 
+  $(".homePage .mainBanner .slider").slick({
+    arrows: true,
+    infinite: false
+  });
   $(".all-services-slider").slick({
     infinite: false,
     slidesToScroll: 2,

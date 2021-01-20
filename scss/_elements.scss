@@ -256,3 +256,32 @@ label {
 
 
 }
+
+
+.slick-arrow {
+    @include arrow-right;
+    border-color: #D4D2E3;
+    margin-top: -26px;
+    margin-right: -7.6rem;
+
+    @include media-breakpoint-down(md){
+        margin-right: -5rem;
+    }
+
+    @include media-breakpoint-down(sm){
+        margin-right: -2.5rem;
+    }
+
+    @include media-breakpoint-down(xs){
+        margin-right: 4rem;
+        height: 15px;
+        width: 15px;
+    }
+    &::before {
+        display: none;
+    }
+}
+
+.slick-prev{
+    @include arrow-left;
+}

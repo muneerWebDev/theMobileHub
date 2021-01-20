@@ -30,48 +30,52 @@
 
 
 .select-repairs {
-    padding: 7rem 0 12rem;
-    .showcase .wrapper {
-        background: #fff;
-        padding: 2.5rem 2.5rem 7rem 2.5rem;
-        border-radius: 15px;
-        box-shadow: $card-box-shadow;
+    padding: 12rem 0;
+
+    .showcase {
+        position: sticky;
+        top: 0;
+        left: 0;
+        transition: .3s;
+
+        .wrapper {
+            background: #fff;
+            padding: 2.5rem 0 7rem 0;
+            border-radius: 15px;
+            box-shadow: $card-box-shadow;
+            text-align: center;
+        }
 
 
         .device-info {
             .image {
-                padding: 10.8% 22% 0 13%;
+                padding: 10.8% 22%;
                 background: url("../../images/phone-bg.png") center center no-repeat;
                 background-size: contain;
-                margin-bottom: 5rem;
                 display: inline-block;
 
                 img {
                     box-shadow: $card-box-shadow;
                 }
             }
-
-            .text {
-
-                @include media-breakpoint-up(lg) {
-                    padding-left: 5.5rem;
-
-                }
-            }
         }
 
     }
 
-    #choose-services{
-        padding: 10rem 0 0;
 
-        h2{
-            padding-bottom: 6.5rem;
-        }
-    }
-
-    .fullwidthTab{
+    .fullwidthTab {
         padding-top: 4rem;
     }
-    
+
+}
+
+#choose-services {
+
+    h2 {
+        padding-bottom: 6.5rem;
+    }
+}
+.scrolled .select-repairs .showcase {
+    padding-top: var(--siteHeaderHeight);
+    margin-top: 30px;
 }
