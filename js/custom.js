@@ -38,7 +38,8 @@ $(document).ready(function () {
   // sliders 
   $(".homePage .mainBanner .slider").slick({
     arrows: true,
-    infinite: false
+    infinite: true,
+    autoPlay: true
   });
   $(".all-services-slider").slick({
     infinite: false,

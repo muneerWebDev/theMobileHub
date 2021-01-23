@@ -143,15 +143,6 @@
                             <div class="selected_options">
                                 <h2>Selected repairs</h2>
 
-                                <div class="device-info">
-                                    <div class="image">
-                                        <img src="images/device.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="text">
-                                        <h3>Galaxy A50</h3>
-                                    </div>
-                                </div>
-
                                 <div class="selected-list">
                                     <div class="none_selected">
                                         <h5>No repair chosen</h5>
@@ -161,6 +152,15 @@
 
                                 <div class="next_step">
                                     <a href="service-selected-repairs.php" class=" btn-primary btn d-flex">Continue</a>
+                                </div>
+
+                                <div class="device-info mt-5">
+                                    <div class="image d-none">
+                                        <img src="images/device.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text">
+                                        <h3>Galaxy A50</h3>
+                                    </div>
                                 </div>
 
                             </div>
